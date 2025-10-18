@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Source_Serif_4 } from "next/font/google";
 import "./globals.css";
+import { Header } from "../components/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const sourceSerif = Source_Serif_4({
+  variable: "--font-serif",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -25,9 +23,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${sourceSerif.variable} antialiased min-h-screen flex flex-col font-serif`}
       >
-        {children}
+        <Header />
+        <main className="flex-1 w-full">
+          <div className="mx-auto w-full max-w-6xl px-4 md:px-8 py-8">
+            {children}
+          </div>
+        </main>
+        <footer className="mt-auto w-full border-t border-neutral-200 dark:border-neutral-800">
+          <div className="mx-auto w-full max-w-6xl px-4 py-4 text-xs text-neutral-500">
+            <p>© 2025 Marianne Schofield. All rights reserved.</p>
+            <p>Designed by Ben Daniel-Greep</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
