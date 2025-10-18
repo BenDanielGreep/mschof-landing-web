@@ -10,8 +10,10 @@ export function Header() {
           href="/"
           className="font-semibold tracking-tight mr-auto flex flex-col"
         >
-          <span className="text-2xl">Marianne Schofield</span>
-          <span className="text-sm opacity-80">
+          <span className="text-2xl md:text-3xl whitespace-nowrap">
+            Marianne Schofield
+          </span>
+          <span className="text-lg md:text-xl opacity-80">
             Double bassist and composer
           </span>
         </Link>

@@ -16,22 +16,22 @@
   --btn-outline-border: #171717;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    /* Dark brown background tuned to complement light parchment (#e6dcc8) */
-    --background: #2a1e17; /* deep espresso brown */
-    --foreground: #e9e2d9; /* warm light for text */
-    --surface: rgba(58, 42, 34, 0.7); /* translucent elevated surface */
-    --surface-border: #4a3327;
-    --accent: #d7b896; /* warm highlight accent */
+    /* Dark (blue) palette fallback when system prefers dark and no explicit toggle stored */
+    --background: #0d1b2a; /* deep navy */
+    --foreground: #e9f1f7; /* near-white with slight blue tint for comfortable contrast */
+    --surface: rgba(27, 38, 59, 0.75); /* translucent elevated surface panel */
+    --surface-border: #24344d; /* subtle border delineation */
+    --accent: #4cc9f0; /* vivid cyan accent for links/focus */
     /* Button theme (dark) */
-    --btn-bg: #e9e2d9;
-    --btn-fg: #2a1e17;
-    --btn-bg-hover: #d7cfc5;
-    --btn-border: #e9e2d9;
+    --btn-bg: #e9f1f7;
+    --btn-fg: #0d1b2a;
+    --btn-bg-hover: #d4e5ee;
+    --btn-border: #e9f1f7;
     --btn-outline-bg: transparent;
-    --btn-outline-fg: #e9e2d9;
-    --btn-outline-border: #e9e2d9;
+    --btn-outline-fg: #e9f1f7;
+    --btn-outline-border: #e9f1f7;
   }
 }
 
@@ -59,18 +59,18 @@ html[data-theme="light"] {
   --btn-outline-border: #171717;
 }
 html[data-theme="dark"] {
-  --background: #2a1e17;
-  --foreground: #e9e2d9;
-  --surface: rgba(58, 42, 34, 0.7);
-  --surface-border: #4a3327;
-  --accent: #d7b896;
-  --btn-bg: #e9e2d9;
-  --btn-fg: #2a1e17;
-  --btn-bg-hover: #d7cfc5;
-  --btn-border: #e9e2d9;
-  --btn-outline-bg: transparent;
-  --btn-outline-fg: #e9e2d9;
-  --btn-outline-border: #e9e2d9;
+  --background: #0d1b2a; /* deep navy */
+  --foreground: #e9f1f7; /* soft near-white */
+  --surface: rgba(27, 38, 59, 0.75); /* elevated surface */
+  --surface-border: #24344d; /* surface outline */
+  --accent: #4cc9f0; /* cyan accent */
+  --btn-bg: #e9f1f7; /* filled button background */
+  --btn-fg: #0d1b2a; /* filled button text */
+  --btn-bg-hover: #d4e5ee; /* hover state */
+  --btn-border: #e9f1f7;
+  --btn-outline-bg: transparent; /* outline variant background */
+  --btn-outline-fg: #e9f1f7; /* outline text */
+  --btn-outline-border: #e9f1f7; /* outline border */
 }
 
 /* Blur underlying content when mobile nav is open */
