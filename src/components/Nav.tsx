@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ThemeToggle } from "./ThemeToggle";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
@@ -94,10 +95,10 @@ export function Nav() {
               <Link
                 href={l.href}
                 aria-current={active ? "page" : undefined}
-                className={`relative flex h-14 text-lg items-center px-3 cursor-pointer transition-colors hover:text-black dark:hover:text-white ${
+                className={`relative flex h-14 text-lg items-center px-3 cursor-pointer transition-colors hover:text-[var(--foreground)] ${
                   active
-                    ? "text-black dark:text-white after:absolute after:bottom-0 after:left-0 after:h-0.25 after:w-full after:bg-black dark:after:bg-white"
-                    : "text-neutral-600 dark:text-neutral-300"
+                    ? "text-[var(--foreground)] after:absolute after:bottom-0 after:left-0 after:h-0.25 after:w-full after:bg-[var(--foreground)]"
+                    : "text-[var(--foreground)] opacity-80 hover:opacity-100"
                 }`}
               >
                 {l.label}
@@ -122,12 +123,15 @@ export function Nav() {
                 <Link
                   href={l.href}
                   aria-current={pathname === l.href ? "page" : undefined}
-                  className="flex-1 px-6 py-4 text-4xl leading-tight"
+                  className="flex-1 px-6 py-4 text-4xl leading-tight text-[var(--foreground)]"
                 >
                   {l.label}
                 </Link>
               </li>
             ))}
+            <li className="mt-auto">
+              <ThemeToggle />
+            </li>
           </ul>
         </div>
       )}

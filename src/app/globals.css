@@ -3,12 +3,35 @@
 :root {
   --background: #e6dcc8;
   --foreground: #171717;
+  --surface: rgba(255, 255, 255, 0.75); /* light surface panel */
+  --surface-border: #d2c7b5;
+  --accent: #5a3d24; /* medium brown accent for focus/links */
+  /* Button theme (light) */
+  --btn-bg: #171717;
+  --btn-fg: #ffffff;
+  --btn-bg-hover: #30271f;
+  --btn-border: #171717;
+  --btn-outline-bg: transparent;
+  --btn-outline-fg: #171717;
+  --btn-outline-border: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Dark brown background tuned to complement light parchment (#e6dcc8) */
+    --background: #2a1e17; /* deep espresso brown */
+    --foreground: #e9e2d9; /* warm light for text */
+    --surface: rgba(58, 42, 34, 0.7); /* translucent elevated surface */
+    --surface-border: #4a3327;
+    --accent: #d7b896; /* warm highlight accent */
+    /* Button theme (dark) */
+    --btn-bg: #e9e2d9;
+    --btn-fg: #2a1e17;
+    --btn-bg-hover: #d7cfc5;
+    --btn-border: #e9e2d9;
+    --btn-outline-bg: transparent;
+    --btn-outline-fg: #e9e2d9;
+    --btn-outline-border: #e9e2d9;
   }
 }
 
@@ -18,6 +41,36 @@ body {
   font-family: var(--font-serif), Georgia, "Times New Roman", serif;
   scrollbar-gutter: stable both-edges; /* Modern browsers */
   overflow-y: scroll; /* Fallback: always show vertical scrollbar space */
+}
+
+/* Explicit theme overrides via data-theme on <html> */
+html[data-theme="light"] {
+  --background: #e6dcc8;
+  --foreground: #171717;
+  --surface: rgba(255, 255, 255, 0.75);
+  --surface-border: #d2c7b5;
+  --accent: #5a3d24;
+  --btn-bg: #171717;
+  --btn-fg: #ffffff;
+  --btn-bg-hover: #30271f;
+  --btn-border: #171717;
+  --btn-outline-bg: transparent;
+  --btn-outline-fg: #171717;
+  --btn-outline-border: #171717;
+}
+html[data-theme="dark"] {
+  --background: #2a1e17;
+  --foreground: #e9e2d9;
+  --surface: rgba(58, 42, 34, 0.7);
+  --surface-border: #4a3327;
+  --accent: #d7b896;
+  --btn-bg: #e9e2d9;
+  --btn-fg: #2a1e17;
+  --btn-bg-hover: #d7cfc5;
+  --btn-border: #e9e2d9;
+  --btn-outline-bg: transparent;
+  --btn-outline-fg: #e9e2d9;
+  --btn-outline-border: #e9e2d9;
 }
 
 /* Blur underlying content when mobile nav is open */

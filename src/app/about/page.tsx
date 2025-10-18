@@ -15,7 +15,7 @@ export default function AboutPage() {
           <h1 className="text-6xl font-semibold my-8 whitespace-nowrap lg:whitespace-normal">
             About
           </h1>
-          <hr className="w-full h-px bg-neutral-400/60 dark:bg-neutral-600/60 border-0" />
+          <hr className="w-full h-px border-0 bg-[var(--surface-border)]/60" />
           <div className="prose prose-neutral dark:prose-invert max-w-none mt-8 text-md leading-relaxed space-y-6">
             <p>
               Marianne is a founder member of the ground-breaking quartet The
@@ -92,11 +92,10 @@ export default function AboutPage() {
               supporting her studies.
             </p>
           </div>
-          {/* fat rounded black button with white text */}
           <div className="flex flex-col justify-content-center items-center">
             <Link
               href="/listen"
-              className="btn btn-dark mt-6 bg-black text-white rounded-xl px-6 py-3 inline-block w-fit hover:bg-gray-800"
+              className="mt-6 inline-flex items-center justify-center rounded-xl font-medium px-6 py-3 bg-[var(--btn-bg)] text-[var(--btn-fg)] border border-[var(--btn-border)] hover:bg-[var(--btn-bg-hover)] transition shadow"
             >
               Listen
             </Link>

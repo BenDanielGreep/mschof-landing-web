@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Button } from "@/components/Button";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -86,7 +87,7 @@ export default function ContactForm() {
           required
           minLength={2}
           placeholder="Your name"
-          className="w-full rounded-md border border-neutral-300 bg-white/70 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-black/50 dark:bg-neutral-900 dark:border-neutral-700 dark:focus:ring-white/50"
+          className="w-full rounded-md border border-[var(--surface-border)] bg-[var(--surface)] px-3 py-2 shadow-sm backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/50"
         />
       </div>
       <div>
@@ -101,7 +102,7 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           placeholder="you@example.com"
-          className="w-full rounded-md border border-neutral-300 bg-white/70 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-black/50 dark:bg-neutral-900 dark:border-neutral-700 dark:focus:ring-white/50"
+          className="w-full rounded-md border border-[var(--surface-border)] bg-[var(--surface)] px-3 py-2 shadow-sm backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/50"
         />
       </div>
       <div>
@@ -117,17 +118,20 @@ export default function ContactForm() {
           rows={6}
           minLength={10}
           placeholder="Write your message..."
-          className="w-full rounded-md border border-neutral-300 bg-white/70 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-black/50 dark:bg-neutral-900 dark:border-neutral-700 dark:focus:ring-white/50"
+          className="w-full rounded-md border border-[var(--surface-border)] bg-[var(--surface)] px-3 py-2 shadow-sm backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/50"
         />
       </div>
       <div className="flex items-center gap-4">
-        <button
+        <Button
           type="submit"
+          loading={status === "submitting"}
           disabled={status === "submitting"}
-          className="btn btn-dark mt-6 bg-black text-white rounded-xl px-6 py-3 inline-block w-fit hover:bg-gray-800"
+          variant="primary"
+          size="md"
+          className="mt-6"
         >
           {status === "submitting" ? "Sending…" : "Send Message"}
-        </button>
+        </Button>
         {status === "success" && (
           <span
             className="text-green-600 dark:text-green-400 text-sm"

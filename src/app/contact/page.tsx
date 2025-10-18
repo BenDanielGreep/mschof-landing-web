@@ -12,7 +12,7 @@ export default function ContactPage() {
         <div className="flex flex-col items-center">
           <h1 className="text-4xl font-semibold my-8">Contact Form</h1>
         </div>
-        <hr className="w-full h-px bg-neutral-400/60 dark:bg-neutral-600/60 border-0 mb-12" />
+        <hr className="w-full h-px border-0 bg-[var(--surface-border)]/60 mb-12" />
         <ContactForm />
       </div>
       <div className="md:w-1/2">

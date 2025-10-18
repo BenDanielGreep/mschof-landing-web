@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { Header } from "../components/Header";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const sourceSerif = Source_Serif_4({
   variable: "--font-serif",
@@ -21,8 +22,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Server-render with light theme attribute to match client default
   return (
-    <html lang="en">
+    <html lang="en" data-theme="light" suppressHydrationWarning>
+      <head>
+        <script
+          // Inline script to prevent theme flash (defaults to light)
+          dangerouslySetInnerHTML={{
+            __html: `(()=>{try{var d=document.documentElement;var pref=localStorage.getItem('theme-pref');if(pref==='dark'){d.setAttribute('data-theme','dark');d.classList.add('dark');}else{d.setAttribute('data-theme','light');d.classList.remove('dark');}}catch(e){document.documentElement.setAttribute('data-theme','light');}})();`,
+          }}
+        />
+      </head>
       <body
         className={`${sourceSerif.variable} antialiased min-h-screen flex flex-col font-serif`}
       >
@@ -32,10 +42,16 @@ export default function RootLayout({
             {children}
           </div>
         </main>
-        <footer className="mt-auto w-full border-t border-neutral-200 dark:border-neutral-800">
+        <footer className="mt-auto w-full border-t flex justify-content-between border-[var(--surface-border)]/60">
           <div className="mx-auto w-full max-w-6xl px-4 py-4 text-xs text-neutral-500">
             <p>© 2025 Marianne Schofield. All rights reserved.</p>
             <p>Designed by Ben Daniel-Greep</p>
+          </div>
+          <div className="hidden md:flex justify-center items-center">
+            <label className="block text-xs uppercase tracking-wide mb-2 opacity-70">
+              Theme:
+            </label>
+            <ThemeToggle showTitle={false} />
           </div>
         </footer>
       </body>

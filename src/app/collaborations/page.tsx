@@ -11,7 +11,7 @@ export default function CollaborationsPage() {
       <div className="flex flex-col items-center">
         <h1 className="text-4xl font-semibold my-8">Collaborations</h1>
       </div>
-      <hr className="w-full h-px bg-neutral-400/60 dark:bg-neutral-600/60 border-0 mb-12" />
+      <hr className="w-full h-px border-0 bg-[var(--surface-border)]/60 mb-12" />
       <div className="flex flex-col gap-8 md:flex-row">
         <div className="flex md:w-1/2 flex-col items-start">
           <a href="https://www.riotensemble.com/" className="w-full">

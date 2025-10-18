@@ -54,7 +54,7 @@ export default function ListenPage() {
       <div className="flex flex-col items-center">
         <h1 className="text-4xl font-semibold my-8 ">Listen and watch</h1>
       </div>
-      <hr className="w-full h-px bg-neutral-400/60 dark:bg-neutral-600/60 border-0 mb-12" />
+      <hr className="w-full h-px border-0 bg-[var(--surface-border)]/60 mb-12" />
       <ul className="space-y-16">
         {items.map((item) => (
           <li

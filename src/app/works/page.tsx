@@ -8,7 +8,7 @@ export default function WorksPage() {
           List of compositions and arrangements
         </h1>
       </div>
-      <hr className="w-full h-px bg-neutral-400/60 dark:bg-neutral-600/60 border-0 mb-8" />
+      <hr className="w-full h-px border-0 bg-[var(--surface-border)]/60 mb-8" />
       <ul className="space-y-8 text-md leading-relaxed list-none">
         <li>
           Air and Recitative from <i>Les Printemps Cantatille</i> by Julie Pinel
@@ -28,7 +28,7 @@ export default function WorksPage() {
               ‘close-ups’.
             </i>
           </div>
-          <blockquote className="border-l-4 border-neutral-400 dark:border-neutral-600 pl-4 italic text-neutral-700 dark:text-neutral-300">
+          <blockquote className="border-l-4 pl-4 italic border-[var(--surface-border)]/70 text-[color:oklch(32%_0.02_50)] dark:text-[color:oklch(80%_0.02_50)]">
             <p className="m-0">
               “Time appears to stand still during these points… in a hauntingly
               beautiful arrangement…”

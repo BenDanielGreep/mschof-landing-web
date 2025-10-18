@@ -15,7 +15,7 @@ export default function Home() {
           className="w-full h-auto rounded-sm object-cover"
         />
       </div>
-      <hr className="hidden sm:block w-full h-px bg-neutral-400/60 dark:bg-neutral-600/60 border-0" />
+      <hr className="hidden sm:block w-full h-px border-0 bg-[var(--surface-border)]/60" />
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
         {/* Left: Image (50%) */}
         <div className="w-full lg:w-1/2 flex items-start">
@@ -46,7 +46,7 @@ export default function Home() {
           <div className="flex flex-col justify-content-center items-center">
             <Link
               href="/about"
-              className="btn btn-dark mt-6 bg-black text-white rounded-xl px-6 py-3 inline-block w-fit hover:bg-gray-800"
+              className="mt-6 inline-flex items-center justify-center rounded-xl font-medium px-6 py-3 bg-[var(--btn-bg)] text-[var(--btn-fg)] border border-[var(--btn-border)] hover:bg-[var(--btn-bg-hover)] transition shadow"
             >
               About
             </Link>
