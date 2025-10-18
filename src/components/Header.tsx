@@ -8,10 +8,10 @@ export function Header() {
       <div className="mx-auto flex h-24 w-full max-w-6xl items-center px-4 md:px-12">
         <Link
           href="/"
-          className="font-semibold tracking-tight text-xl md:text-base mr-auto flex flex-col"
+          className="font-semibold tracking-tight mr-auto flex flex-col"
         >
           <span className="text-2xl">Marianne Schofield</span>
-          <span className="hidden lg:block">Double bassist and composer</span>
+          <span>Double bassist and composer</span>
         </Link>
         <Nav />
       </div>

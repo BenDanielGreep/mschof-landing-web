@@ -68,8 +68,8 @@ export default function WorksPage() {
         </li>
         <li>‘Fantoches’ (2017 arrangement of a work by Claude Debussy)</li>
         <li>
-          ‘Riguadon’ from Le Tombeau de Couperin by Maurice Ravel (arr. 2018 for
-          harp, clarinet, double bass)
+          ‘Riguadon’ from <i>Le Tombeau de Couperin</i> by Maurice Ravel (arr.
+          2018 for harp, clarinet, double bass)
         </li>
       </ul>
     </div>

@@ -36,7 +36,7 @@ export default function ContactForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: "YOUR_ACCESS_KEY_HERE",
+          access_key: "01f83a3e-ede8-4c40-9601-11c60fbf4794",
           ...formData,
           subject: "New website contact",
         }),
@@ -124,7 +124,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="inline-flex items-center justify-center rounded-full bg-black px-6 py-3 text-white text-sm font-medium shadow hover:bg-neutral-800 disabled:opacity-60 dark:bg-white dark:text-black dark:hover:bg-neutral-200 transition"
+          className="btn btn-dark mt-6 bg-black text-white rounded-xl px-6 py-3 inline-block w-fit hover:bg-gray-800"
         >
           {status === "submitting" ? "Sending…" : "Send Message"}
         </button>
