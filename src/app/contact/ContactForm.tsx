@@ -22,11 +22,14 @@ export default function ContactForm() {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    // Capture form element immediately to avoid React synthetic event pooling issues on mobile browsers.
+    const formEl = e.currentTarget;
     setStatus("submitting");
     setError(null);
-    const trap = (
-      e.currentTarget.querySelector("input[name='website']") as HTMLInputElement
-    ).value;
+    const honeypot = formEl.elements.namedItem(
+      "website"
+    ) as HTMLInputElement | null;
+    const trap = honeypot?.value || "";
     if (trap) {
       setStatus("error");
       setError("Spam detected.");
@@ -46,7 +49,8 @@ export default function ContactForm() {
       if (data.success) {
         setStatus("success");
         setFormData({ name: "", email: "", message: "" });
-        (e.currentTarget as HTMLFormElement).reset();
+        // Reset uncontrolled fields (honeypot) – controlled inputs are cleared via state.
+        formEl.reset();
       } else {
         setStatus("error");
         setError(data.message || "Submission failed.");
@@ -121,7 +125,7 @@ export default function ContactForm() {
           className="w-full rounded-md border border-[var(--surface-border)] bg-[var(--surface)] px-3 py-2 shadow-sm backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/50"
         />
       </div>
-      <div className="flex items-center gap-4">
+      <div className="flex flex-col justify-center items-center gap-4">
         <Button
           type="submit"
           loading={status === "submitting"}
@@ -137,7 +141,7 @@ export default function ContactForm() {
             className="text-green-600 dark:text-green-400 text-sm"
             role="status"
           >
-            Sent! Thank you.
+            Message sent
           </span>
         )}
         {status === "error" && error && (
