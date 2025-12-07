@@ -22,6 +22,7 @@ export default function ContactPage() {
           priority
           className="w-full h-auto rounded-4xl object-cover"
         />
+        <p className="text-sm text-gray-500 mt-1">Photo by Emma Werner</p>
       </div>
     </div>
   );

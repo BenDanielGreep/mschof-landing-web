@@ -6,25 +6,27 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="py-0 sm:py-8 flex flex-col gap-16">
-      <div className="w-fullflex items-start hidden md:block">
+    <div className="py-0 sm:py-8 flex flex-col gap-14">
+      <div className="w-full items-start hidden md:block">
         <Image
           src={mainImage}
           alt="Double bassist Marianne Schofield"
           priority
           className="w-full h-auto rounded-sm object-cover"
         />
+        <p className="text-sm text-gray-500 mt-1">Photo by Kohki Watanabe</p>
       </div>
       <hr className="hidden sm:block w-full h-px border-0 bg-[var(--surface-border)]/60" />
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
         {/* Left: Image (50%) */}
-        <div className="w-full lg:w-1/2 flex items-start">
+        <div className="w-full lg:w-1/2 flex flex-col items-start">
           <Image
             src={portrait}
             alt="Double bassist Marianne Schofield"
             priority
             className="w-full h-auto rounded-4xl object-cover"
           />
+          <p className="text-sm text-gray-500 mt-1">Photo by Raphael Neal</p>
         </div>
         {/* Right: Text (50%) */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
