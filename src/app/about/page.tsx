@@ -142,7 +142,9 @@ export default function AboutPage() {
               of Cambridge, and is a graduate of the Hallé/RNCM String
               Leadership Scheme. She is grateful to the Cambridge Bursary
               Scheme, the Headley Trust and the Greenbank Scholarship for
-              supporting her studies.
+              supporting her studies. In 2024 she was made an Associate of the
+              Royal Academy of Music (ARAM) in recognition of her contribution
+              to the music profession and the double bass.
             </p>
             <p className="italic">
               (Please do not reproduce without permission; use the contact form
