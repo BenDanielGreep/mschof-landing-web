@@ -43,8 +43,8 @@ export default function RootLayout({
           </div>
         </main>
         <footer className="mt-auto w-full border-t flex justify-content-between border-[var(--surface-border)]/60">
-          <div className="mx-auto w-full max-w-6xl px-4 py-4 text-xs ">
-            <p>© 2025 Marianne Schofield. All rights reserved.</p>
+          <div className="mx-auto w-full px-4 py-4 text-xs ">
+            <p>© 2026 Marianne Schofield. All rights reserved.</p>
             <p>Designed by Ben Daniel-Greep</p>
           </div>
           <div className="hidden md:flex justify-center items-center">

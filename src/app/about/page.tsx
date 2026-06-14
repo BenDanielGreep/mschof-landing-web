@@ -18,6 +18,14 @@ export default function AboutPage() {
           <hr className="w-full h-px border-0 bg-[var(--surface-border)]/60" />
           <div className="prose prose-neutral dark:prose-invert max-w-none mt-8 text-md leading-relaxed space-y-6">
             <p>
+              Marianne Schofield is a double bass player, improviser, composer
+              and arranger based in London. Known for her creativity and
+              versatility, Marianne&#39;s dynamic musical life encompasses
+              classical, contemporary and experimental music, and ranges from
+              solo, chamber, and orchestral playing to writing and collaborative
+              music creation.
+            </p>
+            <p>
               Marianne is a founder member of the ground-breaking quartet{" "}
               <a
                 href="https://www.thehermesexperiment.com/"
@@ -28,11 +36,12 @@ export default function AboutPage() {
               , one of the UK&#39;s leading young contemporary music ensembles
               and winners of the Royal Philharmonic Society Young Artist Award
               in 2021. Formed of harp, clarinet, voice and double bass, the
-              group’s collaborative ethos drives a dynamic programme of over 60
-              new commissions to date, alongside bold arrangements, electrifying
-              free improvisation and music written by members of the group. The
-              Hermes Experiment have released three albums on Delphian Records
-              to critical acclaim; their most recent album, TREE, received a{" "}
+              group&#39;s collaborative ethos drives a dynamic programme of over
+              60 new commissions to date, alongside bold arrangements,
+              electrifying free improvisation and music written by members of
+              the group. The Hermes Experiment have released three albums on
+              Delphian Records to critical acclaim; their most recent album,
+              TREE, received a{" "}
               <a
                 href="https://www.theguardian.com/music/2025/oct/09/the-hermes-experiment-tree-album-review"
                 className="underline"
@@ -49,7 +58,7 @@ export default function AboutPage() {
                 &#39;Schofield is also behind a gorgeous version of Les
                 Rossignols by Élisabeth Jacquet de la Guerre, initially halting
                 and ethereal, then coalescing into something approaching its
-                17th-century original.’{" "}
+                17th-century original.&#39;{" "}
                 <footer className="mt-1 text-sm not-italic font-medium  dark:text-neutral-400">
                   Erica Jeal, Review of TREE by The Hermes Experiment, The
                   Guardian, October 2025
@@ -89,26 +98,6 @@ export default function AboutPage() {
               English Chamber Orchestra, English National Opera, London Mozart
               Players, London Symphony Orchestra, London Philharmonic Orchestra,
               Royal Philharmonic Orchestra, and Sinfonia of London.
-            </p>
-            <p>
-              As an arranger and composer, Marianne recently wrote a piece for
-              Scottish Ensemble and Héloïse Werner to perform in June 2025; a
-              contemporary ‘reimagining’ for string orchestra and voice of a
-              recitative and air from ‘Les Printemps Cantatille’ by the Baroque
-              composer Julie Pinel. Marianne also made a bespoke arrangement for
-              string trio and voice of another song from the same collection of
-              works by Julie Pinel, ‘Sombres Lieux’, for Héloïse Werner’s second
-              album, ‘close-ups’; this was described by Gramophone Magazine as
-              ‘a hauntingly beautiful arrangement’ in which ‘time appears to
-              stand still’. Marianne has arranged music extensively for The
-              Hermes Experiment, including works by Lili Boulanger, Cécile
-              Chaminade, Elizabeth Jacquet de la Guerre, Anna Meredith, and
-              Olivia Chaney, and has also written an original song for the
-              group, ‘Islands’, appearing on their third album, TREE. Upcoming
-              composition projects for late 2025 include a spatial work for
-              organ, voice and The Hermes Experiment, a cello and bass duo for a
-              collaboration with cellist Louise McMonagle, as well as set of
-              unaccompanied double bass miniatures.
             </p>
             <p>
               <blockquote className="border-l-4 pl-4 italic border-[var(--surface-border)]/70">

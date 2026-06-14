@@ -33,8 +33,8 @@ export default function WorksPage() {
           double bass, organ/keyboard (7&apos;)
         </li>
         <li>
-          Reimagining of BWV 721 by J.S. Bach (2025) – soprano, harp, clarinet,
-          double bass, organ/keyboard (6&apos;)
+          <i className="text-lg">Reimagining of BWV 721 by J.S. Bach</i> (2025)
+          – soprano, harp, clarinet, double bass, organ/keyboard (6&apos;)
         </li>
         <li className="space-y-3">
           <div>
@@ -61,22 +61,9 @@ export default function WorksPage() {
         <h3 className="text-xl mt-12 mb-4 font-semibold">
           For The Hermes Experiment (soprano, clarinet, harp, double bass)
         </h3>
-        <li className="space-y-3">
-          <div>
-            <i className="text-lg">Islands</i> (2024) – soprano, harp, clarinet,
-            double bass (6&apos;)
-          </div>
-          <blockquote className="border-l-4 pl-4 italic border-[var(--surface-border)]/70">
-            <p className="m-0 ">
-              &quot;In a song about seeking connection, in a world where we are
-              kept ever more apart by our technologies, the connection in the
-              music gives a glimmer of hope. It is our memories that will
-              sustain us and, by extension, our music as well.&quot;
-            </p>
-            <footer className="mt-1 text-sm not-italic font-medium ">
-              Maureen Buja, Interlude HK (October 2025)
-            </footer>
-          </blockquote>
+        <li>
+          <i className="text-lg">Islands</i> (2024) – original composition for
+          soprano, harp, clarinet, double bass (6&apos;)
         </li>
         <li className="space-y-3">
           <div>
@@ -97,8 +84,8 @@ export default function WorksPage() {
           </blockquote>
         </li>
         <li>
-          Sarabande from Water Music Suite 3 by G. F. Handel (2022) –
-          reimagining for harp, clarinet, double bass (no voice)
+          <i className="text-lg">Sarabande from Water Music Suite 3</i> by G. F.
+          Handel (2022) – reimagining for harp, clarinet, double bass (no voice)
         </li>
         <li className="space-y-3">
           <div>
@@ -161,8 +148,11 @@ export default function WorksPage() {
           arr. for soprano, harp, clarinet, double bass (3&apos;)
         </li>
         <li>
-          Visions Fugitives op. 22 nos 1, 7, 8, and 16 by Sergei Prokofiev
-          (2018) – arr. for harp, clarinet, double bass (no voice)
+          <i className="text-lg">
+            Visions Fugitives op. 22 nos 1, 7, 8, and 16
+          </i>{" "}
+          by Sergei Prokofiev (2018) – arr. for harp, clarinet, double bass (no
+          voice)
         </li>
         <li>
           <i className="text-lg">Fantoches</i> by Claude Debussy (2017) - arr.
