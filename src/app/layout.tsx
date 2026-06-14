@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Source_Serif_4 } from "next/font/google";
-import "../";
+import "./globals.css";
 import { Header } from "../components/Header";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
